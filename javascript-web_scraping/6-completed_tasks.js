@@ -5,7 +5,7 @@ const request = require('request');
 const apiUrl = process.argv[2];
 
 request(apiUrl, (error, response, body) => {
-  if (error) throw error
+  if (error) throw error;
 
   const tasks = JSON.parse(body);
   const result = {};
